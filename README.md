@@ -12,16 +12,28 @@ This repository holds the release builds only. The source is private.
 1. On the phone, open the [latest release](https://github.com/MazenJ200/gym-app-releases/releases/latest).
 2. Under Assets, download `gym-<version>-<commit>.apk`.
 3. Open the downloaded file. The first time, Android asks you to allow your browser (or My Files) to install unknown
-   apps: allow it, go back, and tap Install.
-4. Open Gym and follow "Before your first workout" (notifications, battery, and the backup folder).
+   apps: allow it, go back, and tap Install. Google Play Protect may warn that it does not recognise Gym (it has never
+   been on the Play Store): choose Install anyway.
+4. Open Gym, pick a plan (see First start), and follow "Before your first workout" (notifications, battery, and the
+   backup folder).
 
 If **Auto Blocker** stops the install (Settings, Security and privacy, Auto Blocker), Samsung is refusing apps from
 outside the Galaxy Store and Play Store. Turning it off is your call: it is a security setting.
 
 ## Update
 
-Download the newer APK from Releases and open it. Android updates the app in place and keeps your data.
+From 1.1.0, Gym updates itself: open About (Home, the three dots, About) and tap **Check for updates**. When a newer
+version is out, tap Download and install, then:
 
+- The first time only, Android asks you to allow Gym to install updates: turn the switch on, then press Back.
+- Tap Update.
+- Play Protect warns that it does not recognise Gym: choose **Install anyway**. ("Scan app" would send the app to
+  Google; you may, but there is no need.)
+
+Gym saves a backup first, then updates in a couple of seconds with your data as it was. If your phone shows its home
+screen afterwards, open Gym again. It never checks by itself: only when you tap.
+
+You can still download the newer APK from Releases and open it: Android updates the app in place and keeps your data.
 Or let [Obtainium](https://github.com/ImranR98/Obtainium) watch this repository
 (`https://github.com/MazenJ200/gym-app-releases`): it tells you when a new release is out and installs it with one
 tap.
@@ -30,16 +42,21 @@ tap.
 
 ## Your data
 
-Your plans and logs stay on your phone: no account, no server, and the app has no internet permission at all. After
-every workout it writes a backup to `Download/GymApp/backups/`. Copy that folder off the phone now and then: it is the
+Your plans and logs stay on your phone: no account, no server. Gym goes online only when you tap Check for updates,
+to read the newest version from this page and download it if you ask. After every workout it writes a backup to
+`Download/GymApp/backups/`. Copy that folder off the phone now and then: it is the
 only way back if the phone is lost or reset.
 
 ## First start
 
-Gym starts with one plan already active, "Hamzeh Split" (Push, Pull, Legs). To train something else, open Plans,
-tap "+ New plan", pick a template or start blank, then tap "Make active".
+Gym opens on **Pick a plan**: choose one of the templates (Push Pull Legs, Upper/Lower, Full Body, strength programs,
+and "Hamzeh Split", the author's own) or start a blank plan of your own. Pick pounds or kilograms at the top of the
+same page. The plan you create first becomes your active plan; Plans is where you change it later.
 
-Weights start in pounds: Settings, Gym, "Free weights in" switches to kilograms.
+Moving from another phone? "Restore a backup" on the same page brings in a backup from your old phone's
+`Download/GymApp/backups/` folder.
+
+(Gym 1.0.0 and earlier started with "Hamzeh Split" already active instead.)
 
 ## Check a download (optional)
 
