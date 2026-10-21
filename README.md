@@ -2,15 +2,21 @@
 
 A gym app for Android: build a training plan, log workouts one-handed, and earn badges and ranks along the way.
 
-Made for the **Samsung Galaxy Z Fold8 Ultra** (Android 17, One UI 9). It needs Android 14 or newer. It may work on
-other phones, but it has only been tested on the Fold.
+Made for the **Samsung Galaxy Z Fold8 Ultra**, and for any other Android phone from Android 12. Each release has two
+APKs:
+
+- `gym-<version>-<commit>.apk`: the Fold8 Ultra edition.
+- `gym-android-<version>-<commit>.apk`: the edition for every other Android phone.
+
+The two are separate apps: one cannot update the other, and a phone can hold both (two "Gym" icons then). If Gym is
+already on your phone, keep the edition you have: About's Check for updates always fetches your own.
 
 This repository holds the release builds only. The source is private.
 
 ## Install
 
 1. On the phone, open the [latest release](https://github.com/MazenJ200/gym-app-releases/releases/latest).
-2. Under Assets, download `gym-<version>-<commit>.apk`.
+2. Under Assets, download the APK for your phone (above).
 3. Open the downloaded file. The first time, Android asks you to allow your browser (or My Files) to install unknown
    apps: allow it, go back, and tap Install. Google Play Protect may warn that it does not recognise Gym (it has never
    been on the Play Store): choose Install anyway.
@@ -36,7 +42,8 @@ screen afterwards, open Gym again. It never checks by itself: only when you tap.
 You can still download the newer APK from Releases and open it: Android updates the app in place and keeps your data.
 Or let [Obtainium](https://github.com/ImranR98/Obtainium) watch this repository
 (`https://github.com/MazenJ200/gym-app-releases`): it tells you when a new release is out and installs it with one
-tap.
+tap. With two APKs in each release, Obtainium asks which one: set its APK filter to `^gym-\d` for the Fold8 Ultra
+edition or `^gym-android-\d` for the other (already watching from an earlier release? add the filter now).
 
 **Never uninstall Gym to update it.** Uninstalling deletes everything you logged.
 
@@ -44,8 +51,8 @@ tap.
 
 Your plans and logs stay on your phone: no account, no server. Gym goes online only when you tap Check for updates,
 to read the newest version from this page and download it if you ask. After every workout it writes a backup to
-`Download/GymApp/backups/`. Copy that folder off the phone now and then: it is the
-only way back if the phone is lost or reset.
+`Download/GymApp/backups/` (Fold8 Ultra edition) or `Download/GymApp-android/backups/` (the other). Copy that folder
+off the phone now and then: it is the only way back if the phone is lost or reset.
 
 ## First start
 
@@ -53,15 +60,17 @@ Gym opens on **Pick a plan**: choose one of the templates (Push Pull Legs, Upper
 and "Hamzeh Split", the author's own) or start a blank plan of your own. Pick pounds or kilograms at the top of the
 same page. The plan you create first becomes your active plan; Plans is where you change it later.
 
-Moving from another phone? "Restore a backup" on the same page brings in a backup from your old phone's
-`Download/GymApp/backups/` folder.
+Moving from another phone, or to the other edition? On the old phone, Back up now (Settings), then copy the newest
+`gym-backup-...zip` from its backups folder to the new phone (a cable, a cloud drive, or a message to yourself). There,
+"Restore a backup" on the first page takes it from either edition. Keep the old app until the new one shows your
+workouts.
 
 (Gym 1.0.0 and earlier started with "Hamzeh Split" already active instead.)
 
 ## Check a download (optional)
 
-Each release has a `release.json` beside the APK with the APK's SHA-256. Every build is signed with the same key,
-whose certificate SHA-256 is:
+Each release has a `release.json` (the Fold8 Ultra edition's) and a `release-android.json` (the other's) beside the
+APKs, with each APK's SHA-256. Every build is signed with the same key, whose certificate SHA-256 is:
 
 ```
 01:40:24:25:86:60:78:21:F5:D2:E8:7E:6F:F7:F2:F6:45:E5:E3:12:6F:22:E7:04:8D:E9:D0:54:A6:2F:47:45
