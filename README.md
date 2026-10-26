@@ -91,7 +91,7 @@ Android refuses an update signed by any other key, so an update can only come fr
   r/Fitness Basic Beginner Routine, the Reddit PPL (Metallicadpa), 5/3/1 and 5/3/1 Boring But Big (Jim Wendler), and
   PHUL (Brandon Campbell). Their authors are not affiliated with this app.
 
-The full credits and license texts are in the app: Settings, About.
+The full credits and license texts are in the app: Settings, About, Credits and licences.
 
 ## Terms
 
