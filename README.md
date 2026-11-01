@@ -57,8 +57,8 @@ off the phone now and then: it is the only way back if the phone is lost or rese
 ## First start
 
 Gym opens on **Pick a plan**: choose one of the templates (Push Pull Legs, Upper/Lower, Full Body, strength programs,
-and "Hamzeh Split", the author's own) or start a blank plan of your own. Pick pounds or kilograms at the top of the
-same page. The plan you create first becomes your active plan; Plans is where you change it later.
+and "Hamzeh Split", the author's own), start a blank plan of your own, or tap **Build as I go** for empty days your
+first workouts fill in. Pick pounds or kilograms at the top of the same page. The plan you create first becomes your active plan; Plans is where you change it later.
 
 Moving from another phone, or to the other edition? On the old phone, Back up now (Settings), then copy the newest
 `gym-backup-...zip` from its backups folder to the new phone (a cable, a cloud drive, or a message to yourself). There,
